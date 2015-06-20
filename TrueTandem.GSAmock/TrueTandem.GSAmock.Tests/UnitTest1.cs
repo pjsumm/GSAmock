@@ -12,5 +12,12 @@ namespace TrueTandem.GSAmock.Tests
             // Assert
             Assert.AreEqual("True", "True");
         }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            // Assert
+            Assert.AreEqual("True", "False");
+        }
     }
 }
