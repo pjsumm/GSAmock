@@ -9,9 +9,7 @@ header, footer, nav, section {
     display: block;
 }
 
-
-/* Styles for basic forms
------------------------------------------------------------*/
+/* Styles for basic forms */
 fieldset {
     border: 1px solid #ddd;
     padding: 0 1.4em 1.4em 1.4em;
@@ -36,8 +34,7 @@ textarea {
 }
 
 
-/* Styles for validation helpers
------------------------------------------------------------*/
+/* Styles for validation helpers */
 .field-validation-error {
     color: #f00;
 }

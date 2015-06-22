@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace TrueTandem.GSAmock.Controllers
 {
@@ -17,7 +13,16 @@ namespace TrueTandem.GSAmock.Controllers
         /// <returns></returns>
         public ActionResult Index()
         {
-            return View();
+            return this.View();
+        }
+
+        /// <summary>
+        /// Contacts this instance.
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Contact()
+        {
+            return this.View();
         }
     }
 }
