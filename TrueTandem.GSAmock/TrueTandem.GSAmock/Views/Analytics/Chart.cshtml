@@ -1,0 +1,19 @@
+﻿@model TrueTandem.GSAmock.Models.AnalyticsIndexModel
+
+@{
+    this.ViewBag.Title = string.Format("Analytics - {0}", this.Model.Section);
+}
+
+<div>
+    @* This is an example of breaking the charts in to partial views. *@
+    @switch (this.Model.Section)
+    {
+        case 1:
+            break;
+            
+        case 0:
+        default:
+            Html.RenderPartial("_Section0", this.Model);
+            break;
+    }
+</div>
