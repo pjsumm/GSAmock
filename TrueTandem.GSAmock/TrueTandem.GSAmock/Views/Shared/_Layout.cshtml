@@ -10,36 +10,77 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-header">
-            <button class="navbar-toggle collapse" aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" type="button">
-                <span class="sr-only">
-                    Toggle navigation
-                </span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                GSA Mock
-            </a>
+    <div class="clearfix">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapse" aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" type="button">
+                    <span class="sr-only">
+                        Toggle navigation
+                    </span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    GSA Mock
+                </a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        @this.Html.ActionLink("Home", "Index")
+                    </li>
+                    <li>
+                        @this.Html.ActionLink("Analytics", "Index", "Analytics")
+                    </li>
+                    <li>
+                        @this.Html.ActionLink("Contact Us", "Contact")
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container" style="min-height: 80vh;">@this.RenderBody()</div>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-sm-3 col-xs-hidden">
+                @* Image *@
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <h5>Resources</h5>
+                <ul>
+                    <li>Resource One</li>
+                    <li>Resource Two</li>
+                    <li>Resource Three</li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <h5>Contacts</h5>
+                <ul>
+                    <li><a href="http://wwww.truetandem.com" title="Visit our website">Website</a></li>
+                    <li><a href="mailto:sales@truetandem.com" title="E-mail our team">E-mail</a></li>
+                    <li><a href="tel:17038896003" title="Give us a call">1.703.889.6003</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <h5>Social</h5>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" class="btn btn-link" title="Twitter"><i class="fa fa-2x fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-link" title="Facebook"><i class="fa fa-2x fa-facebook-official"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-link" title="LinkedIn"><i class="fa fa-2x fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-link" title="Google+"><i class="fa fa-2x fa-google-plus"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active">
-                    @this.Html.ActionLink("Home", "Index")
-                </li>
-                <li>
-                    @this.Html.ActionLink("Analytics", "Index", "Analytics")
-                </li>
-                <li>
-                    @this.Html.ActionLink("Contact Us", "Contact")
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    @this.RenderBody()
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

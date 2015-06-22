@@ -17,8 +17,9 @@ namespace TrueTandem.GSAmock
 
             // Stylesheets
             bundles.Add(new StyleBundle("~/Content/css").Include(
+                "~/Content/css/font-awesome.css",
                 "~/Content/css/bootstrap.css",
-                "~/Content/css/bootstrap-theme.min.css",
+                "~/Content/css/bootstrap-theme.css",
                 "~/Content/css/site.css"));
         }
     }
